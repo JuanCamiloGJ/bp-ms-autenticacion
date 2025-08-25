@@ -1,0 +1,20 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: "autenticacion"
+  devtools:
+    add-properties: false
+  profiles:
+    include: null
+
+cors:
+  allowed-origins: "http://localhost:4200,http://localhost:8080"
+
+adapters:
+  r2dbc:
+    database: "mydb"
+    username: "myuser"
+    password: "mypassword"
+    host: "host.docker.internal"
+    port: 3306
